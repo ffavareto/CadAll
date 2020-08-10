@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(81, 81, 218);
+    color: white;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+main{
+    display : grid;
+    grid-template-rows: 8vh 15vh 77vh;
+    grid-template-areas: "nav" "header" "section";
+}
+
+header{ 
+    grid-area: header;
+    font-size: 5rem;
+    font-family: Archivo;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    grid-area: section; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+table{
+    background: rgb(53, 53, 201);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+td{
+    padding: 0.5em;
+}
+
+input, date, select{
+    padding: 0.5em;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 0.3em;
+}
+
+#nome{ width: 73%; }
+#cpf{ width: 40%; }
+#rg{ width: 35%; }
+#data{ width: 20%; }
+#cep{ width: 22%; }
+#cidade{ width: 65%; }
+#rua{ width: 75%; }
+#numero{ width: 19%; }
+#complemento{ width: 54%; }
+
+
+@media(max-width: 800px) {
+    main{
+        display : grid;
+        grid-template-rows: 15vh 5vh 75vh;
+        grid-template-areas: "header" "nav" "section";
+    }
+    
+    header{ 
+        grid-area: header;
+        font-size: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section{
+        grid-area: section; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+    }
+
+    td{
+        display: block;
+        padding: 0.3em;
+    }
+
+    #data{ width: 39%; }
+}

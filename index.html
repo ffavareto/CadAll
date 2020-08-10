@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadAll</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            CadAll
+        </header>
+
+        <section>
+            <div>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome">
+                            </td>
+
+                            <td>
+                                <label for="cpf">CPF</label>
+                                <input type="text" name="cpf" id="cpf" minlength="14" maxlength="14"  onkeypress="return Numeros(event)">
+                            </td>
+
+                            <td>
+                                <label for="rg">RG</label>
+                                <input type="text" name="rg" id="rg"  minlength="12" maxlength="12"  onkeypress="return Numeros(event)">
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <label for="data">Data de nascimento</label>
+                                <input type="text" name="data" id="data" minlength="10" maxlength="10" onkeypress="return Numeros(event)">
+                            </td>
+
+                            <td>
+                                <label for="cnh">CNH</label>
+                                <select id="cnh">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="AB">AB</option>
+                                    <option value="D">C</option>
+                                    <option value="D">D</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <label for="civil">Estado civil</label>
+                                <select id="civil">
+                                    <option value="Solteiro(a)" selected>Solteiro(a)</option>
+                                    <option value="Casado(a)">Casado(a)</option>
+                                    <option value="União estável">União estável</option>
+                                    <option value="Divorciado(a)">Divorciado(a)</option>
+                                    <option value="Viúvo(a)">Viúvo(a)</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="cep">CEP</label>
+                                <input type="text" name="cep" id="cep" minleght="9" maxlength="9"onkeypress="return Numeros(event)">
+                            </td>
+
+                            <td>
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" id="cidade">
+                            </td>
+                            
+                            <td>
+                                <label for="uf">UF</label>
+                                <select id="uf">
+                                    <option>AC</option>
+                                    <option>AL</option>
+                                    <option>AM</option>
+                                    <option>AP</option>
+                                    <option>BA</option>
+                                    <option>CE</option>
+                                    <option>DF</option>
+                                    <option>ES</option>
+                                    <option>GO</option>
+                                    <option>MA</option>
+                                    <option>MG</option>
+                                    <option>MS</option>
+                                    <option>MT</option>
+                                    <option>PA</option>
+                                    <option>PB</option>
+                                    <option>PE</option>
+                                    <option>PI</option>
+                                    <option>PR</option>
+                                    <option>RJ</option>
+                                    <option>RN</option>
+                                    <option>RO</option>
+                                    <option>RR</option>
+                                    <option>RS</option>
+                                    <option>SC</option>
+                                    <option>SE</option>
+                                    <option>SP</option>
+                                    <option>TO</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="rua">Rua</label>
+                                <input type="text" name="rua" id="rua">
+                            </td>
+
+                            <td>
+                                <label for="numero">Número</label>
+                                <input type="text" name="numero" id="numero" maxlength="7">
+                            </td>
+
+                            <td>
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="bairro" id="bairro">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="complemento">Complemento</label>
+                                <input type="text" name="complemento" id="complemento">
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="3" align="center">
+                                <input type="submit" name="salvar" id="salvar" value="Salvar">
+                                <input type="reset" name="limpar" id="limpar" value="Limpar">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
