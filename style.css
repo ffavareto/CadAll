@@ -44,48 +44,39 @@ td{
 input, date, select{
     padding: 0.5em;
     font-size: 16px;
-    border: 0px;
+    border: 1px solid white;
     border-radius: 0.3em;
 }
 
-#nome{ width: 73%; }
+#nome{ width: 72%; }
 #cpf{ width: 40%; }
 #rg{ width: 35%; }
-#data{ width: 20%; }
-#cep{ width: 22%; }
+#data{ width: 26%; }
+#cep{ width: 25%; }
 #cidade{ width: 65%; }
 #rua{ width: 75%; }
 #numero{ width: 19%; }
-#complemento{ width: 54%; }
-
-
-@media(max-width: 800px) {
+#bairro{ width: 65%; }
+#complemento{ width: 44%; }
+@media(max-width: 415px) {
     main{
         display : grid;
-        grid-template-rows: 15vh 5vh 75vh;
+        grid-template-rows: 15vh 5vh 85vh;
         grid-template-areas: "header" "nav" "section";
     }
     
-    header{ 
-        grid-area: header;
-        font-size: 10vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    header{ font-size: 10vw; }
+    table{ background: rgb(81, 81, 218); }
+    td{ display: block; padding: 0.3em; }
+}
 
-    section{
-        grid-area: section; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: right;
+@media(min-width: 768px) and (max-width: 1024px) {
+    main{
+        display : grid;
+        grid-template-rows: 30vh 10vh 35vh;
+        grid-template-areas: "header" "nav" "section";
     }
-
-    td{
-        display: block;
-        padding: 0.3em;
-    }
-
-    #data{ width: 39%; }
+    
+    header{ font-size: 10vw; }
+    td{ display: block; padding: 0.3em; }
 }

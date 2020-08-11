@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CadAll</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap" rel="stylesheet">-->
 </head>
 <body>
     <main>
@@ -19,41 +19,41 @@
                     <table>
                         <tr>
                             <td>
-                                <label for="nome">Nome</label>
-                                <input type="text" name="nome" id="nome">
+                                <label for="Nome">Nome</label>
+                                <input type="text" name="Nome" id="nome" maxlength="50" placeholder="Pedro Álvares de Cabral Júnior">
                             </td>
 
                             <td>
-                                <label for="cpf">CPF</label>
-                                <input type="text" name="cpf" id="cpf" minlength="14" maxlength="14"  onkeypress="return Numeros(event)">
+                                <label for="CPF">CPF</label>
+                                <input type="text" name="CPF" id="cpf" maxlength="14"  onkeypress="return Numeros(event)" placeholder="123.456.789-00">
                             </td>
 
                             <td>
-                                <label for="rg">RG</label>
-                                <input type="text" name="rg" id="rg"  minlength="12" maxlength="12"  onkeypress="return Numeros(event)">
+                                <label for="RG">RG</label>
+                                <input type="text" name="RG" id="rg"  maxlength="12" onkeypress="return Numeros(event)" placeholder="12.345.678-9">
                             </td>
                         </tr>
                     
                         <tr>
                             <td>
-                                <label for="data">Data de nascimento</label>
-                                <input type="text" name="data" id="data" minlength="10" maxlength="10" onkeypress="return Numeros(event)">
+                                <label for="Data">Data de nascimento</label>
+                                <input type="text" name="Data" id="data" maxlength="10" onkeypress="return Numeros(event)" placeholder="01/01/1900">
                             </td>
 
                             <td>
-                                <label for="cnh">CNH</label>
-                                <select id="cnh">
+                                <label for="CNH">CNH</label>
+                                <select id="CNH">
                                     <option value="A">A</option>
                                     <option value="B">B</option>
-                                    <option value="AB">AB</option>
+                                    <option value="AB" selected>AB</option>
                                     <option value="D">C</option>
                                     <option value="D">D</option>
                                 </select>
                             </td>
 
                             <td>
-                                <label for="civil">Estado civil</label>
-                                <select id="civil">
+                                <label for="Civil">Estado civil</label>
+                                <select id="Civil">
                                     <option value="Solteiro(a)" selected>Solteiro(a)</option>
                                     <option value="Casado(a)">Casado(a)</option>
                                     <option value="União estável">União estável</option>
@@ -65,77 +65,77 @@
 
                         <tr>
                             <td>
-                                <label for="cep">CEP</label>
-                                <input type="text" name="cep" id="cep" minleght="9" maxlength="9"onkeypress="return Numeros(event)">
+                                <label for="CEP">CEP</label>
+                                <input type="text" name="CEP" id="cep" maxlength="9" onkeypress="return Numeros(event)" placeholder="12345-678">
                             </td>
 
                             <td>
-                                <label for="cidade">Cidade</label>
-                                <input type="text" name="cidade" id="cidade">
+                                <label for="Cidade">Cidade</label>
+                                <input type="text" name="Cidade" id="cidade" maxlength="40" placeholder="São José do Rio Preto" maxlength="50">
                             </td>
                             
                             <td>
-                                <label for="uf">UF</label>
-                                <select id="uf">
-                                    <option>AC</option>
-                                    <option>AL</option>
-                                    <option>AM</option>
-                                    <option>AP</option>
-                                    <option>BA</option>
-                                    <option>CE</option>
-                                    <option>DF</option>
-                                    <option>ES</option>
-                                    <option>GO</option>
-                                    <option>MA</option>
-                                    <option>MG</option>
-                                    <option>MS</option>
-                                    <option>MT</option>
-                                    <option>PA</option>
-                                    <option>PB</option>
-                                    <option>PE</option>
-                                    <option>PI</option>
-                                    <option>PR</option>
-                                    <option>RJ</option>
-                                    <option>RN</option>
-                                    <option>RO</option>
-                                    <option>RR</option>
-                                    <option>RS</option>
-                                    <option>SC</option>
-                                    <option>SE</option>
-                                    <option>SP</option>
-                                    <option>TO</option>
+                                <label for="UF">UF</label>
+                                <select id="UF">
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AM">AM</option>
+                                    <option value="AP">AP</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GP">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="PR">PR</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="RS">RS</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SE">SE</option>
+                                    <option value="SP" selected>SP</option>
+                                    <option value="TO">TO</option>
                                 </select>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="rua">Rua</label>
-                                <input type="text" name="rua" id="rua">
+                                <label for="Rua">Rua</label>
+                                <input type="text" name="Rua" id="rua" maxlength="50" placeholder="Rua Alameda das Vinhas">
                             </td>
 
                             <td>
-                                <label for="numero">Número</label>
-                                <input type="text" name="numero" id="numero" maxlength="7">
+                                <label for="Número">Número</label>
+                                <input type="text" name="Número" id="numero" maxlength="7" onkeypress="return Numeros(event)" placeholder="333">
                             </td>
 
                             <td>
-                                <label for="bairro">Bairro</label>
-                                <input type="text" name="bairro" id="bairro">
+                                <label for="Bairro">Bairro</label>
+                                <input type="text" name="Bairro" id="bairro" maxlength="30" placeholder="Jardim das Pitangueiras">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="complemento">Complemento</label>
-                                <input type="text" name="complemento" id="complemento">
+                                <label for="Complemento">Complemento</label>
+                                <input type="text" name="complemento" id="complemento" maxlength="20" placeholder="B4 AP57">
                             </td>
                             
                         </tr>
                         
                         <tr>
                             <td colspan="3" align="center">
-                                <input type="submit" name="salvar" id="salvar" value="Salvar">
+                                <input type="button" name="salvar" id="salvar" value="Salvar">
                                 <input type="reset" name="limpar" id="limpar" value="Limpar">
                             </td>
                         </tr>
